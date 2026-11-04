@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT Admin Dashboard - Group 2</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding-top: 20px;
+        }
+
+        .card {
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-header {
+            font-weight: bold;
+            background-color: #f1f5f9;
+        }
+
+        .status-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 5px;
+        }
+
+        .status-running,
+        .status-connected {
+            background-color: #28a745;
+        }
+
+        .status-paused {
+            background-color: #ffc107;
+        }
+
+        .status-offline,
+        .status-disconnected {
+            background-color: #dc3545;
+        }
+
+        .anomaly-high {
+            color: #dc3545;
+        }
+
+        .anomaly-medium {
+            color: #ffc107;
+        }
+
+        .anomaly-low {
+            color: #17a2b8;
+        }
+
+        .dashboard-header {
+            margin-bottom: 30px;
+        }
+
+        .chart-container {
+            height: 300px;
+            width: 100%;
+        }
+
+        #refreshStatus {
+            cursor: pointer;
+        }
+
+        .control-btn {
+            margin-right: 5px;
+        }
+
+        .last-updated {
+            font-size: 12px;
+            color: #6c757d;
+            display: block;
+            margin-top: 5px;
+        }
+
+        #subscriberTable th,
+        #subscriberTable td {
+            white-space: nowrap;
+            padding-right: 25px;
+            min-width: 130px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="dashboard-header text-center">
+            <h1>IoT Admin Dashboard</h1>
+            <p class="text-muted">Group 2 - MQTT Monitoring System</p>
+            <div class="text-end">
+                <span id="refreshStatus" title="Refresh Dashboard">
+                    <i class="fas fa-sync-alt"></i> Refresh
+                </span>
+                <span class="last-updated">Last updated: <span id="lastUpdatedTime">Never</span></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- System Overview Card -->
+            <div class="card mt-4">
+                <div class="card-header">
+                    MQTT Configuration
+                </div>
+                <div class="card-body">
+                    <ul class="list-group" id="mqttConfigList">
+                        <!-- Will be populated by JS -->
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="card">
+                    <div class="card-header">
+                        System Overview
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span>Active Publishers:</span>
+                            <span id="activePublishers" class="badge bg-primary">0</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span>Active Subscribers:</span>
+                            <span id="activeSubscribers" class="badge bg-success">0</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <span>Stored Data Points:</span>
+                            <span id="dataPointCount" class="badge bg-info">0</span>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span>Anomalies (Last 24h):</span>
+                            <span id="anomalyCount" class="badge bg-warning">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Controls Card -->
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        Controls
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6>Data Collection</h6>
+                                <button class="btn btn-sm btn-primary control-btn" id="exportData">
+                                    <i class="fas fa-download"></i> Export Data
+                                </button>
+                                <button class="btn btn-sm btn-danger control-btn" id="clearAnomalies">
+                                    <i class="fas fa-trash"></i> Clear Anomalies
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Publisher Status Card -->
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        Publishers
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-sm table-hover" id="publisherTable">
+                                <thead>
+                                    <tr>
+                                        <th>Publisher ID</th>
+                                        <th>Status</th>
+                                        <th>Last Seen/State</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% if publishers %}
+                                    {% for id, info in publishers.items() %}
+                                    <tr>
+                                        <td>{{ id }}</td>
+                                        <td>
+                                            {% if info.is_online %}
+                                            <span class="status-indicator status-connected"></span> Online
+                                            {% else %}
+                                            <span class="status-indicator status-offline"></span> Offline
+                                            {% endif %}
+                                        </td>
+                                        <td>
+                                            <span class="status-indicator ${statusClass}"></span> ${statusText}
+                                            {{ info.state }}
+                                        </td>
+                                        <td>{{ info.last_seen|default('Unknown') }}</td>
+                                    </tr>
+                                    {% endfor %}
+                                    {% for id, pub in publishers.items() %}
+                                    <tr>
+                                        <td>{{ id }}</td>
+                                        <td>
+                                            {% if pub.is_online %}
+                                            <span style="color: green; font-weight: bold;">Online</span>
+                                            {% else %}
+                                            <span style="color: red; font-weight: bold;">Offline</span>
+                                            {% endif %}
+                                        </td>
+                                        <td>{{ pub.state }}</td>
+                                    </tr>
+                                    {% endfor %}
+
+                                    {% else %}
+                                    <tr>
+                                        <td colspan="4" class="text-center">No active publishers detected.</td>
+                                    </tr>
+                                    {% endif %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Subscriber Status Card -->
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        Subscribers
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-sm table-hover" id="subscriberTable">
+                                <thead>
+                                    <tr>
+                                        <th>CLIENT ID</th>
+                                        <th>Status</th>
+                                        <th>Last Seen/State</th>
+                                        <th>Topic</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% if subscribers %}
+                                    {% for id, info in subscribers.items() %}
+                                    <tr>
+                                        <td>{{ id }}</td>
+                                        <td>
+                                            <span class="status-indicator status-{{ info.state|lower }}"></span>
+                                            {{ info.state }}
+                                        </td>
+                                        <td>{{ info.last_seen|default('Unknown') }}</td>
+                                        <td>{{ info.topic|default('Unknown') }}</td>
+                                    </tr>
+                                    {% endfor %}
+                                    {% for id, sub in subscribers.items() %}
+                                    <tr>
+                                        <td>{{ id }}</td>
+                                        <td>
+                                            {% if sub.is_online %}
+                                            <span style="color: green; font-weight: bold;">Online</span>
+                                            {% else %}
+                                            <span style="color: red; font-weight: bold;">Offline</span>
+                                            {% endif %}
+                                        </td>
+                                        <td>{{ sub.state }}</td>
+                                        <td>{{ sub.topic }}</td>
+                                    </tr>
+                                    {% endfor %}
+
+                                    {% else %}
+                                    <tr>
+                                        <td colspan="4" class="text-center">No active subscribers detected.</td>
+                                    </tr>
+                                    {% endif %}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Historical Data Chart -->
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        Historical Data
+                    </div>
+                    <div class="card-body">
+                        <div class="chart-container" id="dataChart">
+                            <!-- Chart will be rendered here -->
+                            <div class="text-center py-5" id="noDataMessage">
+                                <p class="text-muted">Data Points: <span id="histDataCount">0</span></p>
+                                <p class="text-muted">Select date range and sensor to view data</p>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-4">
+                                <select class="form-select form-select-sm" id="timeRangeSelect">
+                                    <option value="1h">Last Hour</option>
+                                    <option value="6h">Last 6 Hours</option>
+                                    <option value="24h" selected>Last 24 Hours</option>
+                                    <option value="7d">Last 7 Days</option>
+                                    <option value="custom">Custom Range</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <select class="form-select form-select-sm" id="sensorSelect">
+                                    <option value="all">All Sensors</option>
+                                    <!-- Populated dynamically -->
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <button class="btn btn-sm btn-primary w-100" id="updateChart">
+                                    Update Chart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Anomalies Card -->
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        Anomalies
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="list-group list-group-flush" id="anomalyList">
+                            {% if anomaly_log %}
+                            {% for anomaly in anomaly_log %}
+                            <div class="list-group-item">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h6 class="mb-1 anomaly-{{ anomaly.severity|default('medium') }}">
+                                        {{ anomaly.type }}
+                                    </h6>
+                                    <small>
+                                        {{ anomaly.timestamp|default('Unknown') }}
+                                    </small>
+                                </div>
+                                <p class="mb-1">{{ anomaly.details }}</p>
+                                <small>Sensor: {{ anomaly.sensor_id|default('Unknown') }}</small>
+                            </div>
+                            {% endfor %}
+                            {% else %}
+                            <div class="list-group-item text-center">
+                                No anomalies detected.
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/10.0.0/highcharts.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Initial data load
+            refreshDashboard();
+
+            // Setup refresh button
+            $('#refreshStatus').click(function () {
+                refreshDashboard();
+            });
+
+            // Auto refresh every 30 seconds
+            setInterval(refreshDashboard, 30000);
+
+            // Setup chart update button
+            $('#updateChart').click(function () {
+                loadHistoricalData();
+            });
+
+            // Control buttons
+            $('#exportData').click(function () {
+                // Implementation for exporting data
+                alert('Exporting data...');
+                window.location.href = '/api/export';
+            });
+
+            $('#clearAnomalies').click(function () {
+
+                // Implementation for clearing anomalies
+                alert('Clearing anomalies..');
+            });
+
+            // Initial chart setup
+            setupChart();
+        });
+
+        function refreshDashboard() {
+            $.get('/api/status', function (data) {
+                //get the online publishers and subscribers
+                const onlinePublishers = Object.values(data.publishers).filter(p => p.is_online).length;
+                const onlineSubscribers = Object.values(data.subscribers).filter(s => s.is_online).length;
+
+                // Update counters
+                $('#activePublishers').text(onlinePublishers);
+                $('#activeSubscribers').text(onlineSubscribers);
+                $('#dataPointCount').text(data.historical_data_count);
+                $('#anomalyCount').text(data.anomaly_count);
+                $('#histDataCount').text(data.historical_data_count);
+
+                // Update last refreshed time
+                $('#lastUpdatedTime').text(new Date().toLocaleTimeString());
+
+                // Update publisher table
+                updatePublisherTable(data.publishers);
+
+                // Update subscriber table
+                updateSubscriberTable(data.subscribers);
+
+                // Load anomalies
+                loadAnomalies();
+
+                // Load historical data for chart
+                loadHistoricalData();
+                // Force chart redraw
+                const chart = Highcharts.charts[0];
+                if (chart) chart.redraw();
+                $('#publisherTable, #subscriberTable').hide().show(0);
+                if (Highcharts.charts[0]) {
+                    Highcharts.charts[0].reflow();
+                }
+            });
+        }
+
+        function updatePublisherTable(publishers) {
+            const tableBody = $('#publisherTable tbody');
+            tableBody.empty();
+
+            if (Object.keys(publishers).length === 0) {
+                tableBody.append(`
+                    <tr>
+                        <td colspan="4" class="text-center">No active publishers detected.</td>
+                    </tr>
+                `);
+                return;
+            }
+
+            for (const [id, info] of Object.entries(publishers)) {
+                const lastSeen = info.last_seen ? new Date(info.last_seen * 1000).toLocaleTimeString() : 'Unknown';
+                const statusText = info.is_online ? "Online" : "Offline";
+                const statusClass = info.is_online ? "status-connected" : "status-offline";
+
+                tableBody.append(`
+                    <tr>
+                        <td>${id}</td>
+                        <td>
+                            <span class="status-indicator ${statusClass}"></span>
+                            ${statusText}
+                        </td>
+                        <td>${info.state} at ${lastSeen}</td>
+                    </tr>
+                    `);
+            }
+        }
+
+        function updateSubscriberTable(subscribers) {
+            const tableBody = $('#subscriberTable tbody');
+            tableBody.empty();
+
+            if (Object.keys(subscribers).length === 0) {
+                tableBody.append(`
+                    <tr>
+                        <td colspan="4" class="text-center">No active subscribers detected.</td>
+                    </tr>
+                `);
+                return;
+            }
+
+            for (const [id, info] of Object.entries(subscribers)) {
+                const lastSeen = info.last_seen ? new Date(info.last_seen * 1000).toLocaleTimeString() : 'Unknown';
+                const statusText = info.is_online ? "Online" : "Offline";
+                const statusClass = info.is_online ? "status-connected" : "status-offline";
+
+                tableBody.append(`
+                    <tr>
+                        <td>${id}</td>
+                    <td>
+                        <span class="status-indicator ${statusClass}"></span>
+                        ${statusText}
+                    </td>
+                    <td>${info.state} at ${lastSeen}</td>
+                    <td>${info.topic || 'Unknown'}</td>
+                    </tr>
+    `           );
+            }
+        }
+
+        function loadAnomalies() {
+            $.get('/api/anomalies', function (data) {
+                const anomalyList = $('#anomalyList');
+                anomalyList.empty();
+
+                if (data.length === 0) {
+                    anomalyList.append(`
+                        <div class="list-group-item text-center">
+                            No anomalies detected.
+                        </div>
+                    `);
+                    return;
+                }
+
+                data.forEach(function (anomaly) {
+                    const timestamp = anomaly.timestamp ? new Date(anomaly.timestamp * 1000).toLocaleString() : 'Unknown';
+                    const severity = anomaly.severity || 'medium';
+
+                    anomalyList.append(`
+                        <div class="list-group-item">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6 class="mb-1 anomaly-${severity}">
+                                    ${anomaly.type}
+                                </h6>
+                                <small>${timestamp}</small>
+                            </div>
+                            <p class="mb-1">${anomaly.details}</p>
+                            <small>Sensor: ${anomaly.details.includes('sensor') ? anomaly.details.split('sensor')[1].split(' ')[0] : 'Unknown'}</small>
+                        </div>
+                    `);
+                });
+            });
+        }
+
+        function setupChart() {
+            Highcharts.chart('dataChart', {
+                chart: {
+                    type: 'line',
+                    zoomType: 'x'
+                },
+                title: {
+                    text: 'Sensor Data'
+                },
+                xAxis: {
+                    type: 'datetime',
+                    title: {
+                        text: 'Time'
+                    }
+                },
+                yAxis: {
+                    title: {
+                        text: 'Value'
+                    }
+                },
+                tooltip: {
+                    headerFormat: '<b>{series.name}</b><br>',
+                    pointFormat: '{point.x:%Y-%m-%d %H:%M:%S}<br>{point.y:.2f}'
+                },
+                series: [{
+                    name: 'Sensor Data',
+                    data: []
+                }]
+            });
+
+            // Hide chart if no data
+            if ($('#histDataCount').text() === '0') {
+                $('#noDataMessage').show();
+            } else {
+                $('#noDataMessage').hide();
+            }
+        }
+
+        function loadHistoricalData() {
+            // Get time range
+            const timeRange = $('#timeRangeSelect').val();
+            let startTime, endTime = Date.now() / 1000;
+
+            switch (timeRange) {
+                case '1h':
+                    startTime = endTime - 3600;
+                    break;
+                case '6h':
+                    startTime = endTime - 3600 * 6;
+                    break;
+                case '24h':
+                    startTime = endTime - 3600 * 24;
+                    break;
+                case '7d':
+                    startTime = endTime - 3600 * 24 * 7;
+                    break;
+                case 'custom':
+                    // Implement custom date picker if needed
+                    startTime = endTime - 3600 * 24; // Default to 24h
+                    break;
+                default:
+                    startTime = endTime - 3600 * 24;
+            }
+
+            // Get sensor filter (if applicable)
+            const sensorId = $('#sensorSelect').val();
+
+            // Load data
+            $.get(`/api/historical?start=${startTime}&end=${endTime}${sensorId !== 'all' ? '&sensor=' + sensorId : ''}`, function (data) {
+                if (data.length === 0) {
+                    $('#noDataMessage').show();
+                    return;
+                }
+
+                $('#noDataMessage').hide();
+
+                const chart = Highcharts.charts.find(chart => chart.renderTo.id === 'dataChart');
+                if (chart) {
+                    chart.series[0].setData(data);
+                }
+            });
+        }
+
+        function sendControlCommand(publisherId, command) {
+            $.ajax({
+                url: `/api/control/publisher/${publisherId}`,
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify({
+                    command: command,
+                    value: null // Add value if needed for specific commands
+                }),
+                success: function (response) {
+                    if (response.success) {
+                        // Success notification
+                        alert(`Command "${command}" sent successfully to ${publisherId}`);
+                        // Refresh data after a short delay
+                        setTimeout(refreshDashboard, 1000);
+                    } else {
+                        // Error notification
+                        alert(`Failed to send command: ${response.message}`);
+                    }
+                },
+                error: function (xhr, status, error) {
+                    alert(`Error: ${error}`);
+                }
+            });
+        }
+
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        let chart;
+
+        function fetchHistoricalData() {
+            fetch('/api/historical')
+                .then(res => res.json())
+                .then(data => {
+                    const timestamps = data.map(d => new Date(d[0]));
+                    const values = data.map(d => d[1]);
+
+                    document.getElementById("histDataCount").textContent = data.length;
+
+                    if (chart) {
+                        chart.destroy();
+                    }
+
+                    const ctx = document.createElement('canvas');
+                    document.getElementById("dataChart").innerHTML = '';
+                    document.getElementById("dataChart").appendChild(ctx);
+
+                    chart = new Chart(ctx, {
+                        type: 'line',
+                        data: {
+                            labels: timestamps,
+                            datasets: [{
+                                label: 'Sensor Value',
+                                data: values,
+                                borderColor: 'rgba(75, 192, 192, 1)',
+                                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                                tension: 0.1
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            scales: {
+                                x: {
+                                    type: 'time',
+                                    time: {
+                                        tooltipFormat: 'HH:mm:ss',
+                                        unit: 'minute'
+                                    },
+                                    title: {
+                                        display: true,
+                                        text: 'Time'
+                                    }
+                                },
+                                y: {
+                                    title: {
+                                        display: true,
+                                        text: 'Value'
+                                    }
+                                }
+                            }
+                        }
+                    });
+                })
+                .catch(err => {
+                    console.error("Error loading historical data:", err);
+                });
+        }
+
+        document.getElementById("updateChart").addEventListener("click", fetchHistoricalData);
+
+        // Load initial chart
+        fetchHistoricalData();
+
+        document.getElementById("clearAnomalies").addEventListener("click", () => {
+            fetch('/api/anomalies/clear', {
+                method: 'POST'
+            })
+                .then(res => res.json())
+                .then(data => {
+                    if (data.status === "cleared") {
+                        // Clear table UI immediately
+                        const tbody = document.querySelector("#anomalyTable tbody");
+                        tbody.innerHTML = "";
+                    }
+                })
+                .catch(err => {
+                    console.error("Failed to clear anomalies:", err);
+                });
+        });
+
+        function fetchMQTTConfig() {
+            fetch('/api/config')
+                .then(res => res.json())
+                .then(data => {
+                    const list = document.getElementById("mqttConfigList");
+                    list.innerHTML = '';
+                    Object.entries(data).forEach(([key, val]) => {
+                        const item = `<li class="list-group-item d-flex justify-content-between">
+                                <strong>${key}</strong>
+                                <span>${val}</span>
+                              </li>`;
+                        list.innerHTML += item;
+                    });
+                });
+        }
+        fetchMQTTConfig();
+
+
+
+        setInterval(() => {
+            location.reload();
+        }, 10000); // Refresh every 10 seconds
+    </script>
+
+</body>
+
+</html>
