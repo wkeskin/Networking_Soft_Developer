@@ -1,0 +1,451 @@
+2025-03-08 16:35:40,594 - ImageServer - INFO - Starting Image Server on 127.0.0.1:5000
+2025-03-08 16:35:40,622 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-08 16:35:40,622 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-08 16:35:40,622 - werkzeug - INFO -  * Restarting with stat
+2025-03-08 16:35:40,878 - ImageServer - INFO - Starting Image Server on 127.0.0.1:5000
+2025-03-08 16:35:40,895 - werkzeug - WARNING -  * Debugger is active!
+2025-03-08 16:35:40,903 - werkzeug - INFO -  * Debugger PIN: 950-293-743
+2025-03-08 16:36:22,785 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 16:36:22] "[33mGET / HTTP/1.1[0m" 404 -
+2025-03-08 22:07:50,217 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 22:07:50] "[33mGET / HTTP/1.1[0m" 404 -
+2025-03-08 22:44:13,834 - werkzeug - INFO -  * Detected change in '/Users/sam/Downloads/Assignment5-NW/Project/server/image-server.py', reloading
+2025-03-08 22:44:13,903 - werkzeug - INFO -  * Restarting with stat
+2025-03-08 22:44:14,291 - ImageServer - INFO - Starting Image Server on 127.0.0.1:5000
+2025-03-08 22:44:14,314 - werkzeug - WARNING -  * Debugger is active!
+2025-03-08 22:44:14,328 - werkzeug - INFO -  * Debugger PIN: 950-293-743
+2025-03-08 23:13:50,021 - ImageServer - INFO - Created new session: d229174d-251c-4906-ae81-523f60301d49 for 127.0.0.1
+2025-03-08 23:13:50,022 - ImageServer - INFO - Session d229174d-251c-4906-ae81-523f60301d49 requested image list, found 0 images
+2025-03-08 23:13:50,023 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 23:13:50] "GET /image-list HTTP/1.1" 200 -
+2025-03-08 23:13:57,089 - ImageServer - INFO - Created new session: e8d76a6f-f62c-4fad-beb9-280771927456 for 127.0.0.1
+2025-03-08 23:13:57,089 - ImageServer - INFO - Session e8d76a6f-f62c-4fad-beb9-280771927456 requested image list, found 0 images
+2025-03-08 23:13:57,090 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 23:13:57] "GET /image-list HTTP/1.1" 200 -
+2025-03-08 23:13:57,478 - ImageServer - INFO - Created new session: d8204ada-3bc0-4b05-a871-d791f785ad0a for 127.0.0.1
+2025-03-08 23:13:57,479 - ImageServer - INFO - Session d8204ada-3bc0-4b05-a871-d791f785ad0a requested image list, found 0 images
+2025-03-08 23:13:57,480 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 23:13:57] "GET /image-list HTTP/1.1" 200 -
+2025-03-08 23:13:57,668 - ImageServer - INFO - Created new session: 4b8c5e60-690d-4dd7-b793-a611719e4f30 for 127.0.0.1
+2025-03-08 23:13:57,668 - ImageServer - INFO - Session 4b8c5e60-690d-4dd7-b793-a611719e4f30 requested image list, found 0 images
+2025-03-08 23:13:57,669 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 23:13:57] "GET /image-list HTTP/1.1" 200 -
+2025-03-08 23:13:57,845 - ImageServer - INFO - Created new session: 2fd69fba-ef4e-4b62-895d-b61ca96c160f for 127.0.0.1
+2025-03-08 23:13:57,845 - ImageServer - INFO - Session 2fd69fba-ef4e-4b62-895d-b61ca96c160f requested image list, found 0 images
+2025-03-08 23:13:57,846 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 23:13:57] "GET /image-list HTTP/1.1" 200 -
+2025-03-08 23:13:58,021 - ImageServer - INFO - Created new session: 1e976fc2-733a-4d10-8d2d-1115d3d752d4 for 127.0.0.1
+2025-03-08 23:13:58,021 - ImageServer - INFO - Session 1e976fc2-733a-4d10-8d2d-1115d3d752d4 requested image list, found 0 images
+2025-03-08 23:13:58,022 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 23:13:58] "GET /image-list HTTP/1.1" 200 -
+2025-03-08 23:14:02,154 - ImageServer - INFO - Created new session: ba86f5bb-025d-4a00-add3-d2a9a9b638dc for 127.0.0.1
+2025-03-08 23:14:06,537 - ImageServer - INFO - Session ba86f5bb-025d-4a00-add3-d2a9a9b638dc uploaded image: pexels-photo-247851.jpeg.png
+2025-03-08 23:14:06,539 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 23:14:06] "POST /uploads HTTP/1.1" 200 -
+2025-03-08 23:14:08,263 - ImageServer - INFO - Created new session: a746bbc0-f575-44f8-9531-6d9111abf731 for 127.0.0.1
+2025-03-08 23:14:08,264 - ImageServer - INFO - Session a746bbc0-f575-44f8-9531-6d9111abf731 requested image list, found 1 images
+2025-03-08 23:14:08,264 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 23:14:08] "GET /image-list HTTP/1.1" 200 -
+2025-03-08 23:14:10,234 - ImageServer - INFO - Created new session: 085d1a57-47b9-4bd4-9f7e-257964b51139 for 127.0.0.1
+2025-03-08 23:14:14,210 - ImageServer - INFO - Created new session: b0fdb205-c53b-4f47-92b1-bf0128189d00 for 127.0.0.1
+2025-03-08 23:14:14,211 - ImageServer - INFO - Session b0fdb205-c53b-4f47-92b1-bf0128189d00 requested image list, found 1 images
+2025-03-08 23:14:14,211 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 23:14:14] "GET /image-list HTTP/1.1" 200 -
+2025-03-08 23:14:14,616 - ImageServer - INFO - Created new session: 2ec0862d-a3fb-4594-90f1-e9cfde3b3c1b for 127.0.0.1
+2025-03-08 23:14:14,616 - ImageServer - INFO - Session 2ec0862d-a3fb-4594-90f1-e9cfde3b3c1b requested image list, found 1 images
+2025-03-08 23:14:14,616 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 23:14:14] "GET /image-list HTTP/1.1" 200 -
+2025-03-08 23:14:14,921 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 23:14:14] "GET /get-image/pexels-photo-247851.jpeg.png HTTP/1.1" 200 -
+2025-03-08 23:14:16,996 - ImageServer - INFO - Created new session: d2ff03ad-2dfb-4882-a255-f2490a4a006e for 127.0.0.1
+2025-03-08 23:14:21,686 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 23:14:21] "GET /get-image/pexels-photo-247851.jpeg.png HTTP/1.1" 200 -
+2025-03-08 23:15:04,772 - ImageServer - INFO - Created new session: 79c90be2-6b38-4b01-879a-65c7e384e177 for 127.0.0.1
+2025-03-08 23:15:04,772 - ImageServer - INFO - Session 79c90be2-6b38-4b01-879a-65c7e384e177 requested image list, found 1 images
+2025-03-08 23:15:04,773 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 23:15:04] "GET /image-list HTTP/1.1" 200 -
+2025-03-08 23:15:11,558 - ImageServer - INFO - Created new session: 01eb5b51-04bb-4776-89f1-f478a38f272c for 127.0.0.1
+2025-03-08 23:15:13,508 - ImageServer - INFO - Session 01eb5b51-04bb-4776-89f1-f478a38f272c uploaded image: pexels-photo-1366919.jpeg.png
+2025-03-08 23:15:13,510 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 23:15:13] "POST /uploads HTTP/1.1" 200 -
+2025-03-08 23:15:13,513 - ImageServer - INFO - Created new session: acab28cc-3e8d-46df-be03-66d4cfb9285a for 127.0.0.1
+2025-03-08 23:15:13,513 - ImageServer - INFO - Session acab28cc-3e8d-46df-be03-66d4cfb9285a requested image list, found 2 images
+2025-03-08 23:15:13,513 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 23:15:13] "GET /image-list HTTP/1.1" 200 -
+2025-03-08 23:15:22,333 - ImageServer - INFO - Created new session: 0a7d3e53-4152-4090-8862-9f18bf164d14 for 127.0.0.1
+2025-03-08 23:15:22,335 - ImageServer - INFO - Session 0a7d3e53-4152-4090-8862-9f18bf164d14 requested image list, found 2 images
+2025-03-08 23:15:22,335 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 23:15:22] "GET /image-list HTTP/1.1" 200 -
+2025-03-08 23:15:24,177 - ImageServer - INFO - Created new session: 5482c229-8fc0-49fd-a2c6-e99dae610403 for 127.0.0.1
+2025-03-08 23:15:26,288 - werkzeug - INFO - 127.0.0.1 - - [08/Mar/2025 23:15:26] "GET /get-image/pexels-photo-1366919.jpeg.png HTTP/1.1" 200 -
+2025-03-10 17:38:48,194 - ImageServer - INFO - Starting Image Server on 127.0.0.1:5000
+2025-03-10 17:38:48,195 - werkzeug - WARNING - WebSocket transport not available. Install simple-websocket for improved performance.
+2025-03-10 17:38:48,218 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-10 17:38:48,218 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-10 17:38:48,219 - werkzeug - INFO -  * Restarting with stat
+2025-03-10 17:38:48,780 - ImageServer - INFO - Starting Image Server on 127.0.0.1:5000
+2025-03-10 17:38:48,780 - werkzeug - WARNING - WebSocket transport not available. Install simple-websocket for improved performance.
+2025-03-10 17:38:48,793 - werkzeug - WARNING -  * Debugger is active!
+2025-03-10 17:38:48,799 - werkzeug - INFO -  * Debugger PIN: 570-878-352
+2025-03-10 17:39:15,042 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 17:39:15] "[33mGET / HTTP/1.1[0m" 404 -
+2025-03-10 17:39:15,072 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 17:39:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-03-10 17:41:04,960 - ImageServer - INFO - Created new session: d4709f3e-fa09-48c5-ade3-911a87966e75 for 127.0.0.1
+2025-03-10 17:41:04,960 - ImageServer - INFO - Session d4709f3e-fa09-48c5-ade3-911a87966e75 requested image list, found 2 images
+2025-03-10 17:41:04,961 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 17:41:04] "GET /image-list HTTP/1.1" 200 -
+2025-03-10 18:13:48,783 - ImageServer - INFO - Cleaned up 1 inactive sessions
+2025-03-10 22:36:41,966 - ImageServer - INFO - Starting Image Server on 127.0.0.1:5000
+2025-03-10 22:36:41,968 - werkzeug - WARNING - WebSocket transport not available. Install simple-websocket for improved performance.
+2025-03-10 22:36:41,996 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-10 22:36:41,997 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-10 22:36:41,997 - werkzeug - INFO -  * Restarting with stat
+2025-03-10 22:36:42,560 - ImageServer - INFO - Starting Image Server on 127.0.0.1:5000
+2025-03-10 22:36:42,561 - werkzeug - WARNING - WebSocket transport not available. Install simple-websocket for improved performance.
+2025-03-10 22:36:42,574 - werkzeug - WARNING -  * Debugger is active!
+2025-03-10 22:36:42,579 - werkzeug - INFO -  * Debugger PIN: 570-878-352
+2025-03-10 22:37:05,512 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 22:37:05] "[33mGET / HTTP/1.1[0m" 404 -
+2025-03-10 22:38:57,362 - werkzeug - INFO -  * Detected change in 'D:\\WARDAGUL\\CENTENNIAL\\04 WINTER 2025\\COMP216-NetworkingforSftwrDvlpr\\Assignments\\GroupProject\\Project02\\Project2B\\server\\image-server.py', reloading
+2025-03-10 22:38:57,462 - werkzeug - INFO -  * Restarting with stat
+2025-03-10 22:38:57,874 - werkzeug - INFO -  * Detected change in 'D:\\WARDAGUL\\CENTENNIAL\\04 WINTER 2025\\COMP216-NetworkingforSftwrDvlpr\\Assignments\\GroupProject\\Project02\\Project2B\\server\\image-server.py', reloading
+2025-03-10 22:38:57,936 - werkzeug - INFO -  * Restarting with stat
+2025-03-10 22:38:58,076 - ImageServer - INFO - Starting Image Server on 127.0.0.1:5000
+2025-03-10 22:38:58,077 - werkzeug - WARNING - WebSocket transport not available. Install simple-websocket for improved performance.
+2025-03-10 22:38:58,089 - werkzeug - WARNING -  * Debugger is active!
+2025-03-10 22:38:58,096 - werkzeug - INFO -  * Debugger PIN: 570-878-352
+2025-03-10 22:38:58,522 - ImageServer - INFO - Starting Image Server on 127.0.0.1:5000
+2025-03-10 22:38:58,522 - werkzeug - WARNING - WebSocket transport not available. Install simple-websocket for improved performance.
+2025-03-10 22:38:58,535 - werkzeug - WARNING -  * Debugger is active!
+2025-03-10 22:38:58,541 - werkzeug - INFO -  * Debugger PIN: 570-878-352
+2025-03-10 22:38:59,976 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 22:38:59] "GET / HTTP/1.1" 200 -
+2025-03-10 22:39:40,398 - ImageServer - INFO - Created new session: 74bdc5ce-af6f-44a9-af80-e99863142551 for 127.0.0.1
+2025-03-10 22:39:40,399 - ImageServer - INFO - Session 74bdc5ce-af6f-44a9-af80-e99863142551 requested image list, found 2 images
+2025-03-10 22:39:40,400 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 22:39:40] "GET /image-list HTTP/1.1" 200 -
+2025-03-10 22:39:50,440 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 22:39:50] "GET / HTTP/1.1" 200 -
+2025-03-10 22:40:01,296 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 22:40:01] "[31m[1mGET /uploads HTTP/1.1[0m" 405 -
+2025-03-10 22:42:28,081 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 22:42:28] "GET / HTTP/1.1" 200 -
+2025-03-10 22:42:39,722 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 22:42:39] "GET /session-info HTTP/1.1" 200 -
+2025-03-10 22:46:17,192 - ImageServer - INFO - Created new session: 7ab86f8d-1107-45ae-92eb-f69be70b9cfd for 127.0.0.1
+2025-03-10 22:46:17,193 - ImageServer - INFO - Session 7ab86f8d-1107-45ae-92eb-f69be70b9cfd requested image list, found 2 images
+2025-03-10 22:46:17,194 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 22:46:17] "GET /image-list HTTP/1.1" 200 -
+2025-03-10 22:46:28,974 - ImageServer - INFO - Created new session: cc98d1ca-a1ed-4d34-a914-f27ce99eb3f4 for 127.0.0.1
+2025-03-10 22:46:30,463 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 22:46:30] "GET /get-image/pexels-photo-1366919.jpeg.png HTTP/1.1" 200 -
+2025-03-10 22:46:43,607 - ImageServer - INFO - Created new session: d895156a-c996-4b5f-a24d-f9ce97a0d8d7 for 127.0.0.1
+2025-03-10 22:46:46,536 - ImageServer - INFO - Created new session: eed5595b-b94e-407e-9884-9cc6da777bca for 127.0.0.1
+2025-03-10 22:46:46,536 - ImageServer - INFO - Session eed5595b-b94e-407e-9884-9cc6da777bca requested image list, found 2 images
+2025-03-10 22:46:46,537 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 22:46:46] "GET /image-list HTTP/1.1" 200 -
+2025-03-10 22:46:46,744 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 22:46:46] "GET /get-image/pexels-photo-247851.jpeg.png HTTP/1.1" 200 -
+2025-03-10 23:03:34,569 - ImageServer - INFO - Created new session: 123dfe02-4634-4c2c-b16b-aff848f1005e for 127.0.0.1
+2025-03-10 23:03:34,570 - ImageServer - INFO - Session 123dfe02-4634-4c2c-b16b-aff848f1005e requested image list, found 2 images
+2025-03-10 23:03:34,571 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 23:03:34] "GET /image-list HTTP/1.1" 200 -
+2025-03-10 23:05:01,953 - ImageServer - INFO - Created new session: fd485141-2898-48a2-8658-d8d5a35e6114 for 127.0.0.1
+2025-03-10 23:05:01,954 - ImageServer - INFO - Session fd485141-2898-48a2-8658-d8d5a35e6114 requested image list, found 2 images
+2025-03-10 23:05:01,954 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 23:05:01] "GET /image-list HTTP/1.1" 200 -
+2025-03-10 23:05:09,661 - ImageServer - INFO - Created new session: 52706c3a-e5e1-4a45-8bb9-343b435da547 for 127.0.0.1
+2025-03-10 23:05:13,546 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 23:05:13] "GET /get-image/pexels-photo-247851.jpeg.png HTTP/1.1" 200 -
+2025-03-10 23:07:28,843 - ImageServer - INFO - Created new session: b7bfe0ce-1da5-4483-b51c-40765193e38c for 127.0.0.1
+2025-03-10 23:07:28,844 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 23:07:28] "GET /session-info HTTP/1.1" 200 -
+2025-03-10 23:18:58,494 - ImageServer - INFO - Cleaned up 4 inactive sessions
+2025-03-10 23:27:23,693 - ImageServer - INFO - Created new session: 91cd7621-ad0d-4303-9b6d-4567056da906 for 127.0.0.1
+2025-03-10 23:27:23,694 - ImageServer - INFO - Session 91cd7621-ad0d-4303-9b6d-4567056da906 requested image list, found 2 images
+2025-03-10 23:27:23,695 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 23:27:23] "GET /image-list HTTP/1.1" 200 -
+2025-03-10 23:27:30,481 - ImageServer - INFO - Created new session: 4af1228f-da7f-48f9-b0d9-2fea13cec1f6 for 127.0.0.1
+2025-03-10 23:27:32,041 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 23:27:32] "GET /get-image/pexels-photo-1366919.jpeg.png HTTP/1.1" 200 -
+2025-03-10 23:30:03,380 - ImageServer - INFO - Created new session: a70b377f-e5ad-425e-88ce-d5a18285e105 for 127.0.0.1
+2025-03-10 23:30:06,540 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 23:30:06] "GET /get-image/pexels-photo-247851.jpeg.png HTTP/1.1" 200 -
+2025-03-10 23:30:43,915 - ImageServer - INFO - Created new session: e0e327ab-8b5a-4d15-bf31-f5a7ada045ce for 127.0.0.1
+2025-03-10 23:30:45,307 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 23:30:45] "GET /get-image/pexels-photo-1366919.jpeg.png HTTP/1.1" 200 -
+2025-03-10 23:30:48,297 - ImageServer - INFO - Created new session: feedfcd4-2a01-4b24-8bff-a85a2c364bf1 for 127.0.0.1
+2025-03-10 23:30:51,679 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 23:30:51] "GET /get-image/pexels-photo-247851.jpeg.png HTTP/1.1" 200 -
+2025-03-10 23:31:01,938 - ImageServer - INFO - Created new session: 289b999c-8d89-4fd6-addc-85eff5dc9a33 for 127.0.0.1
+2025-03-10 23:31:02,287 - ImageServer - INFO - Session 289b999c-8d89-4fd6-addc-85eff5dc9a33 uploaded image: green living room.png
+2025-03-10 23:31:02,289 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 23:31:02] "POST /uploads HTTP/1.1" 200 -
+2025-03-10 23:31:02,306 - ImageServer - INFO - Created new session: e2e21cba-930f-43d2-8fba-c9728097fb09 for 127.0.0.1
+2025-03-10 23:31:02,306 - ImageServer - INFO - Session e2e21cba-930f-43d2-8fba-c9728097fb09 requested image list, found 3 images
+2025-03-10 23:31:02,307 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 23:31:02] "GET /image-list HTTP/1.1" 200 -
+2025-03-10 23:31:06,200 - ImageServer - INFO - Created new session: e759b431-cb02-46dc-8fd3-1ad4f90351c4 for 127.0.0.1
+2025-03-10 23:31:06,200 - ImageServer - INFO - Session e759b431-cb02-46dc-8fd3-1ad4f90351c4 requested image list, found 3 images
+2025-03-10 23:31:06,201 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 23:31:06] "GET /image-list HTTP/1.1" 200 -
+2025-03-10 23:31:08,978 - ImageServer - INFO - Created new session: 67a41368-3093-404b-8b08-28492b34a8a4 for 127.0.0.1
+2025-03-10 23:31:09,301 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 23:31:09] "GET /get-image/green%20living%20room.png HTTP/1.1" 200 -
+2025-03-10 23:31:36,654 - ImageServer - INFO - Created new session: d2102cba-298b-4f1e-94f2-0c273c494c01 for 127.0.0.1
+2025-03-10 23:31:36,655 - ImageServer - INFO - Session d2102cba-298b-4f1e-94f2-0c273c494c01 deleted image: green living room.png
+2025-03-10 23:31:36,656 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 23:31:36] "DELETE /delete-image/green%20living%20room.png HTTP/1.1" 200 -
+2025-03-10 23:31:36,661 - ImageServer - INFO - Created new session: 57c5ca03-e2a7-49d8-808d-a4e4f03435be for 127.0.0.1
+2025-03-10 23:31:36,661 - ImageServer - INFO - Session 57c5ca03-e2a7-49d8-808d-a4e4f03435be requested image list, found 2 images
+2025-03-10 23:31:36,662 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 23:31:36] "GET /image-list HTTP/1.1" 200 -
+2025-03-10 23:31:38,429 - ImageServer - INFO - Created new session: ae072ef8-c08b-49af-8e81-07c08eaa8151 for 127.0.0.1
+2025-03-10 23:31:38,430 - ImageServer - INFO - Session ae072ef8-c08b-49af-8e81-07c08eaa8151 requested image list, found 2 images
+2025-03-10 23:31:38,430 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 23:31:38] "GET /image-list HTTP/1.1" 200 -
+2025-03-10 23:31:41,867 - ImageServer - INFO - Created new session: 4c1a15b1-8bff-4bb1-b227-d74ec9f98200 for 127.0.0.1
+2025-03-10 23:31:41,868 - ImageServer - INFO - Session 4c1a15b1-8bff-4bb1-b227-d74ec9f98200 requested image list, found 2 images
+2025-03-10 23:31:41,868 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 23:31:41] "GET /image-list HTTP/1.1" 200 -
+2025-03-10 23:31:42,084 - ImageServer - INFO - Created new session: b6511580-2bd4-4e12-894b-dcdb5c4f6540 for 127.0.0.1
+2025-03-10 23:31:42,084 - ImageServer - INFO - Session b6511580-2bd4-4e12-894b-dcdb5c4f6540 requested image list, found 2 images
+2025-03-10 23:31:42,085 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 23:31:42] "GET /image-list HTTP/1.1" 200 -
+2025-03-10 23:31:42,630 - ImageServer - INFO - Created new session: d35f4cf5-181e-4a9f-b04b-627dc8596040 for 127.0.0.1
+2025-03-10 23:31:42,630 - ImageServer - INFO - Session d35f4cf5-181e-4a9f-b04b-627dc8596040 requested image list, found 2 images
+2025-03-10 23:31:42,631 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 23:31:42] "GET /image-list HTTP/1.1" 200 -
+2025-03-10 23:31:46,546 - ImageServer - INFO - Created new session: 85a933e2-4e5b-4b81-9913-c35cef8bae0f for 127.0.0.1
+2025-03-10 23:31:49,631 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 23:31:49] "GET /get-image/pexels-photo-247851.jpeg.png HTTP/1.1" 200 -
+2025-03-10 23:31:52,942 - ImageServer - INFO - Created new session: 63e813e9-cc04-4998-a967-7ad4b6af59b1 for 127.0.0.1
+2025-03-10 23:31:54,411 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 23:31:54] "GET /get-image/pexels-photo-1366919.jpeg.png HTTP/1.1" 200 -
+2025-03-10 23:33:12,565 - ImageServer - INFO - Created new session: 8f676858-3cc0-4027-b840-8e42bea3cefc for 127.0.0.1
+2025-03-10 23:33:12,565 - ImageServer - INFO - Session 8f676858-3cc0-4027-b840-8e42bea3cefc requested image list, found 2 images
+2025-03-10 23:33:12,567 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 23:33:12] "GET /image-list HTTP/1.1" 200 -
+2025-03-10 23:33:18,472 - ImageServer - INFO - Created new session: 0c597d49-abb2-417c-8b90-dddb880847ad for 127.0.0.1
+2025-03-10 23:33:21,571 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 23:33:21] "GET /get-image/pexels-photo-247851.jpeg.png HTTP/1.1" 200 -
+2025-03-10 23:33:24,755 - ImageServer - INFO - Created new session: 1cd64045-9db3-4de8-a986-fb80107f5cf2 for 127.0.0.1
+2025-03-10 23:33:26,142 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 23:33:26] "GET /get-image/pexels-photo-1366919.jpeg.png HTTP/1.1" 200 -
+2025-03-10 23:33:58,489 - ImageServer - INFO - Cleaned up 1 inactive sessions
+2025-03-10 23:38:58,488 - ImageServer - INFO - Cleaned up 3 inactive sessions
+2025-03-10 23:46:11,990 - ImageServer - INFO - Created new session: f996daee-68f4-401e-a0b9-51015dc5b4cb for 127.0.0.1
+2025-03-10 23:46:11,990 - ImageServer - INFO - Session f996daee-68f4-401e-a0b9-51015dc5b4cb requested image list, found 2 images
+2025-03-10 23:46:11,991 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 23:46:11] "GET /image-list HTTP/1.1" 200 -
+2025-03-10 23:49:21,297 - ImageServer - INFO - Created new session: 6369fa6e-0ae0-4d22-91d0-b08cca78a9fd for 127.0.0.1
+2025-03-10 23:49:21,298 - ImageServer - INFO - Session 6369fa6e-0ae0-4d22-91d0-b08cca78a9fd requested image list, found 2 images
+2025-03-10 23:49:21,299 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 23:49:21] "GET /image-list HTTP/1.1" 200 -
+2025-03-10 23:51:16,485 - ImageServer - INFO - Created new session: 5c784c7b-03a8-441b-9da6-db32bd1b99ec for 127.0.0.1
+2025-03-10 23:51:16,485 - ImageServer - INFO - Session 5c784c7b-03a8-441b-9da6-db32bd1b99ec requested image list, found 2 images
+2025-03-10 23:51:16,486 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 23:51:16] "GET /image-list HTTP/1.1" 200 -
+2025-03-10 23:51:31,909 - ImageServer - INFO - Created new session: 99f477b7-1703-4e51-b3b3-be8e3aadd114 for 127.0.0.1
+2025-03-10 23:51:35,054 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 23:51:35] "GET /get-image/pexels-photo-247851.jpeg.png HTTP/1.1" 200 -
+2025-03-10 23:51:39,991 - ImageServer - INFO - Created new session: 1cd72d6e-e8b0-49a4-a96d-a45850f3416a for 127.0.0.1
+2025-03-10 23:51:39,992 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 23:51:39] "GET /session-info HTTP/1.1" 200 -
+2025-03-10 23:51:56,800 - ImageServer - INFO - Created new session: fd9934bb-d8ac-455b-82fb-a506ab64c403 for 127.0.0.1
+2025-03-10 23:51:56,801 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 23:51:56] "GET /session-info HTTP/1.1" 200 -
+2025-03-10 23:51:58,056 - ImageServer - INFO - Created new session: 7c028708-19ae-4b1f-96c5-30a004135ba8 for 127.0.0.1
+2025-03-10 23:51:58,057 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 23:51:58] "GET /session-info HTTP/1.1" 200 -
+2025-03-10 23:52:11,101 - ImageServer - INFO - Created new session: 1091bceb-8cef-4eae-9088-53db1f80d58c for 127.0.0.1
+2025-03-10 23:52:11,102 - ImageServer - INFO - Session 1091bceb-8cef-4eae-9088-53db1f80d58c requested image list, found 2 images
+2025-03-10 23:52:11,102 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 23:52:11] "GET /image-list HTTP/1.1" 200 -
+2025-03-10 23:53:22,787 - ImageServer - INFO - Created new session: 21727a95-c885-4356-9a45-f7ca4e37c6d7 for 127.0.0.1
+2025-03-10 23:53:22,787 - ImageServer - INFO - Session 21727a95-c885-4356-9a45-f7ca4e37c6d7 requested image list, found 2 images
+2025-03-10 23:53:22,787 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 23:53:22] "GET /image-list HTTP/1.1" 200 -
+2025-03-10 23:53:42,360 - ImageServer - INFO - Created new session: bd9f6952-7441-4a81-a1f2-9cc0a6ddb6dd for 127.0.0.1
+2025-03-10 23:53:42,360 - ImageServer - INFO - Session bd9f6952-7441-4a81-a1f2-9cc0a6ddb6dd requested image list, found 2 images
+2025-03-10 23:53:42,361 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 23:53:42] "GET /image-list HTTP/1.1" 200 -
+2025-03-10 23:55:37,395 - ImageServer - INFO - Created new session: 285784f9-2766-4989-a9cf-6ef379505cc4 for 127.0.0.1
+2025-03-10 23:55:37,396 - ImageServer - INFO - Session 285784f9-2766-4989-a9cf-6ef379505cc4 requested image list, found 2 images
+2025-03-10 23:55:37,396 - werkzeug - INFO - 127.0.0.1 - - [10/Mar/2025 23:55:37] "GET /image-list HTTP/1.1" 200 -
+2025-03-10 23:58:58,484 - ImageServer - INFO - Cleaned up 2 inactive sessions
+2025-03-11 00:03:58,484 - ImageServer - INFO - Cleaned up 18 inactive sessions
+2025-03-11 00:09:45,095 - ImageServer - INFO - Created new session: f22bbd47-1ba2-4815-b0f4-88166a1dea7b for 127.0.0.1
+2025-03-11 00:09:45,097 - ImageServer - INFO - Session f22bbd47-1ba2-4815-b0f4-88166a1dea7b requested image list, found 2 images
+2025-03-11 00:09:45,099 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 00:09:45] "GET /image-list HTTP/1.1" 200 -
+2025-03-11 00:13:52,225 - ImageServer - INFO - Created new session: e0ffc28a-1c06-4318-97f1-7e62ba2c7e35 for 127.0.0.1
+2025-03-11 00:13:52,225 - ImageServer - INFO - Session e0ffc28a-1c06-4318-97f1-7e62ba2c7e35 requested image list, found 2 images
+2025-03-11 00:13:52,226 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 00:13:52] "GET /image-list HTTP/1.1" 200 -
+2025-03-11 00:13:59,021 - ImageServer - INFO - Created new session: 0260dc4b-fa27-45a9-b98a-69623d1083c1 for 127.0.0.1
+2025-03-11 00:14:02,577 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 00:14:02] "GET /get-image/pexels-photo-247851.jpeg.png HTTP/1.1" 200 -
+2025-03-11 00:14:10,519 - ImageServer - INFO - Created new session: b497b216-d63d-4696-a621-451f8ab387aa for 127.0.0.1
+2025-03-11 00:14:12,033 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 00:14:12] "GET /get-image/pexels-photo-1366919.jpeg.png HTTP/1.1" 200 -
+2025-03-11 00:14:20,376 - ImageServer - INFO - Created new session: 7262de20-61b1-4fff-9617-3554533ecb28 for 127.0.0.1
+2025-03-11 00:14:23,561 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 00:14:23] "GET /get-image/pexels-photo-247851.jpeg.png HTTP/1.1" 200 -
+2025-03-11 00:15:31,150 - ImageServer - INFO - Created new session: e5ab4139-ec26-493a-8c77-fe2d46b74107 for 127.0.0.1
+2025-03-11 00:15:31,150 - ImageServer - INFO - Session e5ab4139-ec26-493a-8c77-fe2d46b74107 requested image list, found 2 images
+2025-03-11 00:15:31,151 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 00:15:31] "GET /image-list HTTP/1.1" 200 -
+2025-03-11 00:18:58,483 - ImageServer - INFO - Cleaned up 1 inactive sessions
+2025-03-11 00:23:58,484 - ImageServer - INFO - Cleaned up 9 inactive sessions
+2025-03-11 00:59:23,896 - ImageServer - INFO - Cleaned up 7 inactive sessions
+2025-03-11 01:08:34,668 - ImageServer - INFO - Created new session: 5e4afacc-adb0-4aca-a75e-ae4ca558cb23 for 127.0.0.1
+2025-03-11 01:08:34,669 - ImageServer - INFO - Session 5e4afacc-adb0-4aca-a75e-ae4ca558cb23 requested image list, found 2 images
+2025-03-11 01:08:34,669 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 01:08:34] "GET /image-list HTTP/1.1" 200 -
+2025-03-11 01:08:39,729 - ImageServer - INFO - Created new session: 4abfdf7e-7f97-4987-85a9-91fc77278129 for 127.0.0.1
+2025-03-11 01:08:42,885 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 01:08:42] "GET /get-image/pexels-photo-247851.jpeg.png HTTP/1.1" 200 -
+2025-03-11 01:09:21,051 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 01:09:21] "GET / HTTP/1.1" 200 -
+2025-03-11 01:16:41,842 - ImageServer - INFO - Created new session: 078f8418-043b-4e49-b834-ee2f1eccdf17 for 127.0.0.1
+2025-03-11 01:16:41,843 - ImageServer - INFO - Session 078f8418-043b-4e49-b834-ee2f1eccdf17 requested image list, found 2 images
+2025-03-11 01:16:41,843 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 01:16:41] "GET /image-list HTTP/1.1" 200 -
+2025-03-11 01:16:52,213 - ImageServer - INFO - Created new session: 954691ab-7797-4c87-b672-6c22ac529929 for 127.0.0.1
+2025-03-11 01:16:55,365 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 01:16:55] "GET /get-image/pexels-photo-247851.jpeg.png HTTP/1.1" 200 -
+2025-03-11 01:17:23,769 - ImageServer - INFO - Created new session: a0218fdc-4de7-476d-9694-26032c7907e1 for 127.0.0.1
+2025-03-11 01:17:23,770 - ImageServer - INFO - Session a0218fdc-4de7-476d-9694-26032c7907e1 requested image list, found 2 images
+2025-03-11 01:17:23,771 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 01:17:23] "GET /image-list HTTP/1.1" 200 -
+2025-03-11 01:18:45,798 - ImageServer - INFO - Created new session: 0a98dc70-f6a3-44cd-9125-65b3c2526a8b for 127.0.0.1
+2025-03-11 01:18:45,798 - ImageServer - INFO - Session 0a98dc70-f6a3-44cd-9125-65b3c2526a8b requested image list, found 2 images
+2025-03-11 01:18:45,799 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 01:18:45] "GET /image-list HTTP/1.1" 200 -
+2025-03-11 01:18:53,718 - ImageServer - INFO - Created new session: 7f678024-e33f-4ecc-81b7-6f171477596c for 127.0.0.1
+2025-03-11 01:18:57,331 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 01:18:57] "GET /get-image/pexels-photo-247851.jpeg.png HTTP/1.1" 200 -
+2025-03-11 01:19:06,579 - ImageServer - INFO - Created new session: 7789141c-e893-47ec-952a-81de999b837b for 127.0.0.1
+2025-03-11 01:19:08,082 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 01:19:08] "GET /get-image/pexels-photo-1366919.jpeg.png HTTP/1.1" 200 -
+2025-03-11 01:21:12,578 - werkzeug - INFO -  * Detected change in 'D:\\WARDAGUL\\CENTENNIAL\\04 WINTER 2025\\COMP216-NetworkingforSftwrDvlpr\\Assignments\\GroupProject\\Project02\\Project2B\\server\\image-server.py', reloading
+2025-03-11 01:21:12,676 - werkzeug - INFO -  * Restarting with stat
+2025-03-11 01:21:13,337 - ImageServer - INFO - Starting Image Server on 127.0.0.1:5000
+2025-03-11 01:21:13,338 - werkzeug - WARNING - WebSocket transport not available. Install simple-websocket for improved performance.
+2025-03-11 01:21:13,353 - werkzeug - WARNING -  * Debugger is active!
+2025-03-11 01:21:13,359 - werkzeug - INFO -  * Debugger PIN: 570-878-352
+2025-03-11 01:21:19,370 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 01:21:19] "GET / HTTP/1.1" 200 -
+2025-03-11 01:21:21,809 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 01:21:21] "GET / HTTP/1.1" 200 -
+2025-03-11 01:23:22,618 - ImageServer - INFO - Created new session: 77013d3b-6d1e-49ec-b667-3de6ca2d5862 for 127.0.0.1
+2025-03-11 01:23:22,619 - ImageServer - INFO - Session 77013d3b-6d1e-49ec-b667-3de6ca2d5862 requested image list, found 2 images
+2025-03-11 01:23:22,620 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 01:23:22] "GET /image-list HTTP/1.1" 200 -
+2025-03-11 01:23:26,640 - ImageServer - INFO - Created new session: f67a9bdd-9d82-434d-be62-c59d2606ed47 for 127.0.0.1
+2025-03-11 01:23:29,998 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 01:23:29] "GET /get-image/pexels-photo-247851.jpeg.png HTTP/1.1" 200 -
+2025-03-11 01:23:42,142 - ImageServer - INFO - Created new session: 8c9bf6ce-f6ba-484f-87f2-41a64756db12 for 127.0.0.1
+2025-03-11 01:23:42,188 - ImageServer - INFO - Session 8c9bf6ce-f6ba-484f-87f2-41a64756db12 uploaded image: OIP.png
+2025-03-11 01:23:42,189 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 01:23:42] "POST /uploads HTTP/1.1" 200 -
+2025-03-11 01:23:42,193 - ImageServer - INFO - Created new session: b68cd04a-568f-4d35-acfe-62c1407e1bd7 for 127.0.0.1
+2025-03-11 01:23:42,194 - ImageServer - INFO - Session b68cd04a-568f-4d35-acfe-62c1407e1bd7 requested image list, found 3 images
+2025-03-11 01:23:42,194 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 01:23:42] "GET /image-list HTTP/1.1" 200 -
+2025-03-11 01:23:46,680 - ImageServer - INFO - Created new session: 362dcdb1-538b-4045-8e66-d1109c8aa512 for 127.0.0.1
+2025-03-11 01:23:46,681 - ImageServer - INFO - Session 362dcdb1-538b-4045-8e66-d1109c8aa512 requested image list, found 3 images
+2025-03-11 01:23:46,681 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 01:23:46] "GET /image-list HTTP/1.1" 200 -
+2025-03-11 01:23:52,876 - ImageServer - INFO - Created new session: 9b9bd689-d361-4e04-97e0-4044bd516c0b for 127.0.0.1
+2025-03-11 01:23:52,915 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 01:23:52] "GET /get-image/OIP.png HTTP/1.1" 200 -
+2025-03-11 01:24:01,523 - ImageServer - INFO - Created new session: 136028f4-e1ba-4023-9678-5bc4eefe4e57 for 127.0.0.1
+2025-03-11 01:24:01,524 - ImageServer - INFO - Session 136028f4-e1ba-4023-9678-5bc4eefe4e57 deleted image: OIP.png
+2025-03-11 01:24:01,524 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 01:24:01] "DELETE /delete-image/OIP.png HTTP/1.1" 200 -
+2025-03-11 01:24:01,529 - ImageServer - INFO - Created new session: 40e95506-bdcc-40e3-9c51-4a285e567fc4 for 127.0.0.1
+2025-03-11 01:24:01,529 - ImageServer - INFO - Session 40e95506-bdcc-40e3-9c51-4a285e567fc4 requested image list, found 2 images
+2025-03-11 01:24:01,530 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 01:24:01] "GET /image-list HTTP/1.1" 200 -
+2025-03-11 01:24:03,975 - ImageServer - INFO - Created new session: 0d636302-a894-45ed-9a18-d81cddc8ca96 for 127.0.0.1
+2025-03-11 01:24:03,975 - ImageServer - INFO - Session 0d636302-a894-45ed-9a18-d81cddc8ca96 requested image list, found 2 images
+2025-03-11 01:24:03,977 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 01:24:03] "GET /image-list HTTP/1.1" 200 -
+2025-03-11 01:24:09,260 - ImageServer - INFO - Created new session: b6222e2a-3b46-4792-918d-baca4626663c for 127.0.0.1
+2025-03-11 01:24:12,367 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 01:24:12] "GET /get-image/pexels-photo-247851.jpeg.png HTTP/1.1" 200 -
+2025-03-11 01:24:23,781 - ImageServer - INFO - Created new session: 9f41b188-2a01-4051-8b65-5d4bbc31609e for 127.0.0.1
+2025-03-11 01:24:26,983 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 01:24:26] "GET /get-image/pexels-photo-247851.jpeg.png?format=png HTTP/1.1" 200 -
+2025-03-11 01:25:30,562 - ImageServer - INFO - Created new session: af14b738-bd76-453e-810d-017ccb94ce93 for 127.0.0.1
+2025-03-11 01:25:31,626 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 01:25:31] "GET /get-image/pexels-photo-247851.jpeg.png?format=gif HTTP/1.1" 200 -
+2025-03-11 01:26:10,254 - ImageServer - INFO - Created new session: c864a10d-79e3-4f2b-8f28-8f378f84772a for 127.0.0.1
+2025-03-11 01:26:10,255 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 01:26:10] "GET /session-info HTTP/1.1" 200 -
+2025-03-11 01:26:20,412 - ImageServer - INFO - Created new session: 6b31497d-3a78-4ec3-814b-c7ae64704aa1 for 127.0.0.1
+2025-03-11 01:26:20,413 - ImageServer - INFO - Session 6b31497d-3a78-4ec3-814b-c7ae64704aa1 requested image list, found 2 images
+2025-03-11 01:26:20,413 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 01:26:20] "GET /image-list HTTP/1.1" 200 -
+2025-03-11 01:26:40,283 - ImageServer - INFO - Created new session: b00a003b-bdff-4753-9c59-e019ca3d5372 for 127.0.0.1
+2025-03-11 01:26:40,467 - ImageServer - INFO - Session b00a003b-bdff-4753-9c59-e019ca3d5372 uploaded image: image 1.png
+2025-03-11 01:26:40,469 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 01:26:40] "POST /uploads HTTP/1.1" 200 -
+2025-03-11 01:26:40,472 - ImageServer - INFO - Created new session: e02e8b97-e428-4e13-8372-628873a5867b for 127.0.0.1
+2025-03-11 01:26:40,473 - ImageServer - INFO - Session e02e8b97-e428-4e13-8372-628873a5867b requested image list, found 3 images
+2025-03-11 01:26:40,473 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 01:26:40] "GET /image-list HTTP/1.1" 200 -
+2025-03-11 01:26:43,702 - ImageServer - INFO - Created new session: 9f84aad2-5d3c-4096-8475-4e40ff5b41c7 for 127.0.0.1
+2025-03-11 01:26:43,703 - ImageServer - INFO - Session 9f84aad2-5d3c-4096-8475-4e40ff5b41c7 requested image list, found 3 images
+2025-03-11 01:26:43,703 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 01:26:43] "GET /image-list HTTP/1.1" 200 -
+2025-03-11 01:26:46,351 - ImageServer - INFO - Created new session: 8120f48a-79d5-480d-9ae9-93fa20314dcf for 127.0.0.1
+2025-03-11 01:26:46,529 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 01:26:46] "GET /get-image/image%201.png HTTP/1.1" 200 -
+2025-03-11 01:26:57,664 - ImageServer - INFO - Created new session: c6dcde21-a15f-461b-8bc6-d63c0d3d9e34 for 127.0.0.1
+2025-03-11 01:26:57,665 - ImageServer - INFO - Session c6dcde21-a15f-461b-8bc6-d63c0d3d9e34 deleted image: image 1.png
+2025-03-11 01:26:57,666 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 01:26:57] "DELETE /delete-image/image%201.png HTTP/1.1" 200 -
+2025-03-11 01:26:57,670 - ImageServer - INFO - Created new session: 7e3522af-4831-4c96-8038-33191314f314 for 127.0.0.1
+2025-03-11 01:26:57,670 - ImageServer - INFO - Session 7e3522af-4831-4c96-8038-33191314f314 requested image list, found 2 images
+2025-03-11 01:26:57,671 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 01:26:57] "GET /image-list HTTP/1.1" 200 -
+2025-03-11 01:27:29,392 - ImageServer - INFO - Created new session: 7987ea36-50ee-4116-a685-089ed81e8bee for 127.0.0.1
+2025-03-11 01:27:29,393 - ImageServer - INFO - Session 7987ea36-50ee-4116-a685-089ed81e8bee requested image list, found 2 images
+2025-03-11 01:27:29,394 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 01:27:29] "GET /image-list HTTP/1.1" 200 -
+2025-03-11 01:27:31,619 - ImageServer - INFO - Created new session: 5e82b8a1-60b2-466b-a039-d2d87aed3ec6 for 127.0.0.1
+2025-03-11 01:27:34,048 - ImageServer - INFO - Created new session: 6835a9b5-1407-48af-a6b4-534ef0a825ea for 127.0.0.1
+2025-03-11 01:27:34,866 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 01:27:34] "GET /get-image/pexels-photo-247851.jpeg.png HTTP/1.1" 200 -
+2025-03-11 01:27:35,574 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 01:27:35] "GET /get-image/pexels-photo-1366919.jpeg.png HTTP/1.1" 200 -
+2025-03-11 01:53:47,319 - ImageServer - INFO - Created new session: e8a68eff-6c79-4ca8-b7c7-651734b0cc15 for 127.0.0.1
+2025-03-11 01:53:50,665 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 01:53:50] "GET /get-image/pexels-photo-247851.jpeg.png HTTP/1.1" 200 -
+2025-03-11 01:56:13,341 - ImageServer - INFO - Cleaned up 13 inactive sessions
+2025-03-11 02:01:13,342 - ImageServer - INFO - Cleaned up 10 inactive sessions
+2025-03-11 02:19:02,401 - ImageServer - INFO - Created new session: 2fcb9b6b-d88d-4ce2-878c-3a417cb0dcb8 for 127.0.0.1
+2025-03-11 02:19:02,401 - ImageServer - INFO - Session 2fcb9b6b-d88d-4ce2-878c-3a417cb0dcb8 requested image list, found 2 images
+2025-03-11 02:19:02,402 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 02:19:02] "GET /image-list HTTP/1.1" 200 -
+2025-03-11 02:19:08,120 - ImageServer - INFO - Created new session: 754bca96-2b12-4804-b120-4344da558cf1 for 127.0.0.1
+2025-03-11 02:19:11,447 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 02:19:11] "GET /get-image/pexels-photo-247851.jpeg.png HTTP/1.1" 200 -
+2025-03-11 02:19:21,158 - ImageServer - INFO - Created new session: 0c1d9d30-b3a4-4bd1-bc2b-76bb0e57fd6d for 127.0.0.1
+2025-03-11 02:19:21,500 - ImageServer - INFO - Session 0c1d9d30-b3a4-4bd1-bc2b-76bb0e57fd6d uploaded image: green living room.png
+2025-03-11 02:19:21,502 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 02:19:21] "POST /uploads HTTP/1.1" 200 -
+2025-03-11 02:19:21,506 - ImageServer - INFO - Created new session: 1449abea-a34b-4c29-aee1-530e538b0431 for 127.0.0.1
+2025-03-11 02:19:21,506 - ImageServer - INFO - Session 1449abea-a34b-4c29-aee1-530e538b0431 requested image list, found 3 images
+2025-03-11 02:19:21,507 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 02:19:21] "GET /image-list HTTP/1.1" 200 -
+2025-03-11 02:19:31,108 - ImageServer - INFO - Created new session: 30575f4a-6c35-4137-8299-261965364ff3 for 127.0.0.1
+2025-03-11 02:19:31,453 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 02:19:31] "GET /get-image/green%20living%20room.png HTTP/1.1" 200 -
+2025-03-11 02:19:37,743 - ImageServer - INFO - Created new session: fc8d0ab9-089c-472b-974e-ed950d80ffc8 for 127.0.0.1
+2025-03-11 02:19:37,745 - ImageServer - INFO - Session fc8d0ab9-089c-472b-974e-ed950d80ffc8 deleted image: green living room.png
+2025-03-11 02:19:37,746 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 02:19:37] "DELETE /delete-image/green%20living%20room.png HTTP/1.1" 200 -
+2025-03-11 02:19:37,751 - ImageServer - INFO - Created new session: e44dcbc6-be03-4d15-970b-ea233858c9a9 for 127.0.0.1
+2025-03-11 02:19:37,751 - ImageServer - INFO - Session e44dcbc6-be03-4d15-970b-ea233858c9a9 requested image list, found 2 images
+2025-03-11 02:19:37,752 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 02:19:37] "GET /image-list HTTP/1.1" 200 -
+2025-03-11 02:19:43,988 - ImageServer - INFO - Created new session: 9e433209-4f26-4a40-a0ae-6934e5631d3a for 127.0.0.1
+2025-03-11 02:19:45,501 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 02:19:45] "GET /get-image/pexels-photo-1366919.jpeg.png HTTP/1.1" 200 -
+2025-03-11 02:19:50,422 - ImageServer - INFO - Created new session: 776a8f19-0138-487b-8542-b172210ebaff for 127.0.0.1
+2025-03-11 02:19:53,604 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 02:19:53] "GET /get-image/pexels-photo-247851.jpeg.png HTTP/1.1" 200 -
+2025-03-11 02:19:54,531 - ImageServer - INFO - Created new session: 99a0daab-bd84-4c8a-b999-397ddd038b35 for 127.0.0.1
+2025-03-11 02:19:54,532 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 02:19:54] "GET /session-info HTTP/1.1" 200 -
+2025-03-11 02:25:39,921 - werkzeug - INFO -  * Detected change in 'D:\\WARDAGUL\\CENTENNIAL\\04 WINTER 2025\\COMP216-NetworkingforSftwrDvlpr\\Assignments\\GroupProject\\Project02\\Project2B\\server\\image-server.py', reloading
+2025-03-11 02:25:40,001 - werkzeug - INFO -  * Restarting with stat
+2025-03-11 02:36:59,871 - ImageServer - INFO - Starting Image Server on 127.0.0.1:5000
+2025-03-11 02:36:59,871 - werkzeug - WARNING - WebSocket transport not available. Install simple-websocket for improved performance.
+2025-03-11 02:36:59,905 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-11 02:36:59,906 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-11 02:36:59,906 - werkzeug - INFO -  * Restarting with stat
+2025-03-11 02:37:00,435 - ImageServer - INFO - Starting Image Server on 127.0.0.1:5000
+2025-03-11 02:37:00,436 - werkzeug - WARNING - WebSocket transport not available. Install simple-websocket for improved performance.
+2025-03-11 02:37:00,447 - werkzeug - WARNING -  * Debugger is active!
+2025-03-11 02:37:00,453 - werkzeug - INFO -  * Debugger PIN: 570-878-352
+2025-03-11 02:37:07,749 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 02:37:07] "GET / HTTP/1.1" 200 -
+2025-03-11 02:37:10,380 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 02:37:10] "GET / HTTP/1.1" 200 -
+2025-03-11 02:37:17,664 - ImageServer - INFO - Created new session: e1664308-ee79-4f3a-b6d7-e0dfde2b2f31 for 127.0.0.1
+2025-03-11 02:37:17,664 - ImageServer - INFO - Session e1664308-ee79-4f3a-b6d7-e0dfde2b2f31 requested image list, found 2 images
+2025-03-11 02:37:17,665 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 02:37:17] "GET /image-list HTTP/1.1" 200 -
+2025-03-11 02:37:25,146 - ImageServer - INFO - Created new session: 6e413914-f815-40ba-9210-569ea00fec2d for 127.0.0.1
+2025-03-11 02:37:28,380 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 02:37:28] "GET /get-image/pexels-photo-247851.jpeg.png HTTP/1.1" 200 -
+2025-03-11 02:37:37,470 - ImageServer - INFO - Created new session: d49df1c1-ccca-4aa5-b43d-f7a8d3c9add6 for 127.0.0.1
+2025-03-11 02:37:37,797 - ImageServer - INFO - Session d49df1c1-ccca-4aa5-b43d-f7a8d3c9add6 uploaded image: green living room.png
+2025-03-11 02:37:37,798 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 02:37:37] "POST /uploads HTTP/1.1" 200 -
+2025-03-11 02:37:37,802 - ImageServer - INFO - Created new session: 3bd1b198-82df-4040-88e1-4c3c87fcc963 for 127.0.0.1
+2025-03-11 02:37:37,803 - ImageServer - INFO - Session 3bd1b198-82df-4040-88e1-4c3c87fcc963 requested image list, found 3 images
+2025-03-11 02:37:37,803 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 02:37:37] "GET /image-list HTTP/1.1" 200 -
+2025-03-11 02:37:53,616 - ImageServer - INFO - Created new session: 593d3419-5e7c-45bd-87e3-40a4151b40f8 for 127.0.0.1
+2025-03-11 02:37:53,616 - ImageServer - INFO - Session 593d3419-5e7c-45bd-87e3-40a4151b40f8 requested image list, found 3 images
+2025-03-11 02:37:53,617 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 02:37:53] "GET /image-list HTTP/1.1" 200 -
+2025-03-11 03:21:18,627 - ImageServer - INFO - Starting Image Server on 127.0.0.1:5000
+2025-03-11 03:21:18,630 - werkzeug - WARNING - WebSocket transport not available. Install simple-websocket for improved performance.
+2025-03-11 03:21:18,659 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-03-11 03:21:18,659 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-03-11 03:21:18,659 - werkzeug - INFO -  * Restarting with stat
+2025-03-11 03:21:19,186 - ImageServer - INFO - Starting Image Server on 127.0.0.1:5000
+2025-03-11 03:21:19,187 - werkzeug - WARNING - WebSocket transport not available. Install simple-websocket for improved performance.
+2025-03-11 03:21:19,198 - werkzeug - WARNING -  * Debugger is active!
+2025-03-11 03:21:19,205 - werkzeug - INFO -  * Debugger PIN: 570-878-352
+2025-03-11 03:21:26,558 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 03:21:26] "GET / HTTP/1.1" 200 -
+2025-03-11 03:22:49,827 - ImageServer - INFO - Created new session: 5fea3338-c9db-4e94-9121-5bdc5a1e21c6 for 127.0.0.1
+2025-03-11 03:22:49,828 - ImageServer - INFO - Session 5fea3338-c9db-4e94-9121-5bdc5a1e21c6 requested image list, found 3 images
+2025-03-11 03:22:49,828 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 03:22:49] "GET /image-list HTTP/1.1" 200 -
+2025-03-11 03:22:55,175 - ImageServer - INFO - Created new session: 5b9129d6-4f54-4c1e-8c95-0b26d22e1fbe for 127.0.0.1
+2025-03-11 03:22:55,521 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 03:22:55] "GET /get-image/green%20living%20room.png HTTP/1.1" 200 -
+2025-03-11 03:23:10,570 - ImageServer - INFO - Created new session: cdb5263f-facd-493a-9d1f-e722ce64dd62 for 127.0.0.1
+2025-03-11 03:23:11,942 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 03:23:11] "GET /get-image/pexels-photo-1366919.jpeg.png HTTP/1.1" 200 -
+2025-03-11 03:23:16,154 - ImageServer - INFO - Created new session: 8643c497-96c2-496d-97c4-46c4fe7e3f8d for 127.0.0.1
+2025-03-11 03:23:19,244 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 03:23:19] "GET /get-image/pexels-photo-247851.jpeg.png HTTP/1.1" 200 -
+2025-03-11 03:23:19,600 - ImageServer - INFO - Created new session: 1dc88d36-f43e-4eff-9d45-3ca66e039687 for 127.0.0.1
+2025-03-11 03:23:19,601 - ImageServer - INFO - Session 1dc88d36-f43e-4eff-9d45-3ca66e039687 requested image list, found 3 images
+2025-03-11 03:23:19,602 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 03:23:19] "GET /image-list HTTP/1.1" 200 -
+2025-03-11 03:23:23,740 - ImageServer - INFO - Created new session: 3ea7fc55-436e-4806-82a9-00b51fec844c for 127.0.0.1
+2025-03-11 03:23:24,084 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 03:23:24] "GET /get-image/green%20living%20room.png HTTP/1.1" 200 -
+2025-03-11 03:23:27,139 - ImageServer - INFO - Created new session: a1081a84-14ac-41b4-a6c0-345b27fa30fd for 127.0.0.1
+2025-03-11 03:23:27,140 - ImageServer - INFO - Session a1081a84-14ac-41b4-a6c0-345b27fa30fd deleted image: green living room.png
+2025-03-11 03:23:27,141 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 03:23:27] "DELETE /delete-image/green%20living%20room.png HTTP/1.1" 200 -
+2025-03-11 03:23:27,144 - ImageServer - INFO - Created new session: d83a4c35-4b5b-492b-95ce-ece9863d2793 for 127.0.0.1
+2025-03-11 03:23:27,145 - ImageServer - INFO - Session d83a4c35-4b5b-492b-95ce-ece9863d2793 requested image list, found 2 images
+2025-03-11 03:23:27,145 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 03:23:27] "GET /image-list HTTP/1.1" 200 -
+2025-03-11 03:23:34,300 - ImageServer - INFO - Created new session: 9ab6f92d-5968-4bc4-9532-8d55a902e461 for 127.0.0.1
+2025-03-11 03:23:37,516 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 03:23:37] "GET /get-image/pexels-photo-247851.jpeg.png HTTP/1.1" 200 -
+2025-03-11 03:23:44,430 - ImageServer - INFO - Created new session: 4e0e8b33-ce91-4845-8e4f-300e70056736 for 127.0.0.1
+2025-03-11 03:23:44,774 - ImageServer - INFO - Session 4e0e8b33-ce91-4845-8e4f-300e70056736 uploaded image: green living room.png
+2025-03-11 03:23:44,775 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 03:23:44] "POST /uploads HTTP/1.1" 200 -
+2025-03-11 03:23:44,780 - ImageServer - INFO - Created new session: 55635ecc-e068-45f9-b549-cef0e660f4e3 for 127.0.0.1
+2025-03-11 03:23:44,780 - ImageServer - INFO - Session 55635ecc-e068-45f9-b549-cef0e660f4e3 requested image list, found 3 images
+2025-03-11 03:23:44,781 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 03:23:44] "GET /image-list HTTP/1.1" 200 -
+2025-03-11 03:23:55,709 - ImageServer - INFO - Created new session: 71e195a7-63d1-405e-8da1-8c1171e9938c for 127.0.0.1
+2025-03-11 03:23:56,028 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 03:23:56] "GET /get-image/green%20living%20room.png HTTP/1.1" 200 -
+2025-03-11 03:24:02,379 - ImageServer - INFO - Created new session: d2baabcb-903a-4766-a20d-6e63eee0d896 for 127.0.0.1
+2025-03-11 03:24:02,380 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 03:24:02] "GET /session-info HTTP/1.1" 200 -
+2025-03-11 03:26:33,279 - ImageServer - INFO - Created new session: 4721b255-a84d-4519-a939-4ca59b0d1902 for 127.0.0.1
+2025-03-11 03:26:33,279 - ImageServer - INFO - Session 4721b255-a84d-4519-a939-4ca59b0d1902 requested image list, found 3 images
+2025-03-11 03:26:33,280 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 03:26:33] "GET /image-list HTTP/1.1" 200 -
+2025-03-11 03:26:38,543 - ImageServer - INFO - Created new session: 41777f40-2a52-424c-917b-8ca08f21c97c for 127.0.0.1
+2025-03-11 03:26:38,867 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 03:26:38] "GET /get-image/green%20living%20room.png HTTP/1.1" 200 -
+2025-03-11 03:26:42,586 - ImageServer - INFO - Created new session: 7b0b786a-a6f6-47a1-b263-a2e6e85a8acd for 127.0.0.1
+2025-03-11 03:26:43,990 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 03:26:43] "GET /get-image/pexels-photo-1366919.jpeg.png HTTP/1.1" 200 -
+2025-03-11 03:26:47,371 - ImageServer - INFO - Created new session: 32b096a0-dbfe-41bc-87ad-6605c0c007e4 for 127.0.0.1
+2025-03-11 03:26:50,837 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 03:26:50] "GET /get-image/pexels-photo-247851.jpeg.png HTTP/1.1" 200 -
+2025-03-11 03:28:09,907 - ImageServer - INFO - Created new session: 9040dc13-e564-4eec-8119-f689a4977598 for 127.0.0.1
+2025-03-11 03:28:09,908 - ImageServer - INFO - Session 9040dc13-e564-4eec-8119-f689a4977598 requested image list, found 3 images
+2025-03-11 03:28:09,908 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 03:28:09] "GET /image-list HTTP/1.1" 200 -
+2025-03-11 03:30:18,761 - ImageServer - INFO - Created new session: 96947ac0-a5fc-4092-9f24-c87f3787decb for 127.0.0.1
+2025-03-11 03:30:18,762 - ImageServer - INFO - Session 96947ac0-a5fc-4092-9f24-c87f3787decb requested image list, found 3 images
+2025-03-11 03:30:18,763 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 03:30:18] "GET /image-list HTTP/1.1" 200 -
+2025-03-11 03:30:32,504 - ImageServer - INFO - Created new session: 59037194-bf0a-42e5-8402-a1a8f59032b5 for 127.0.0.1
+2025-03-11 03:30:32,869 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 03:30:32] "GET /get-image/green%20living%20room.png HTTP/1.1" 200 -
+2025-03-11 03:30:35,717 - ImageServer - INFO - Created new session: b0ed71b5-8b8f-4249-bdfc-e4c6eed0be09 for 127.0.0.1
+2025-03-11 03:30:37,148 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 03:30:37] "GET /get-image/pexels-photo-1366919.jpeg.png HTTP/1.1" 200 -
+2025-03-11 03:30:38,888 - ImageServer - INFO - Created new session: 7c50c925-b9bd-4a2d-8e9d-e268bffe5c20 for 127.0.0.1
+2025-03-11 03:30:42,053 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 03:30:42] "GET /get-image/pexels-photo-247851.jpeg.png HTTP/1.1" 200 -
+2025-03-11 03:31:26,473 - ImageServer - INFO - Created new session: 4950c42e-ac72-408b-836e-5a189ad56b3b for 127.0.0.1
+2025-03-11 03:31:26,473 - ImageServer - INFO - Session 4950c42e-ac72-408b-836e-5a189ad56b3b requested image list, found 3 images
+2025-03-11 03:31:26,474 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 03:31:26] "GET /image-list HTTP/1.1" 200 -
+2025-03-11 03:36:41,257 - ImageServer - INFO - Created new session: e976558a-5b5a-4afe-986a-f622f82efc69 for 127.0.0.1
+2025-03-11 03:36:41,258 - ImageServer - INFO - Session e976558a-5b5a-4afe-986a-f622f82efc69 requested image list, found 3 images
+2025-03-11 03:36:41,263 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 03:36:41] "GET /image-list HTTP/1.1" 200 -
+2025-03-11 03:38:28,985 - ImageServer - INFO - Created new session: 185f96fb-63aa-41ac-82cb-47a8523ced14 for 127.0.0.1
+2025-03-11 03:38:29,318 - werkzeug - INFO - 127.0.0.1 - - [11/Mar/2025 03:38:29] "GET /get-image/green%20living%20room.png HTTP/1.1" 200 -
